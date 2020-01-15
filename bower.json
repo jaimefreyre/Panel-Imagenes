@@ -1,0 +1,14 @@
+{
+  "name": "panel_imagenes",
+  "authors": [
+    "Jaime <jaimefreyre@gmail.com>"
+  ],
+  "description": "Panel de carga de archivos",
+  "main": "index",
+  "license": "true",
+  "homepage": "index",
+  "dependencies": {
+    "dropzone": "^5.5.0",
+    "bootstrap": "^4.1.3"
+  }
+}

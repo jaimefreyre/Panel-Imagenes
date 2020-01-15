@@ -1,0 +1,14 @@
+.clase{
+	height: 200px;
+	padding: 5px;
+	position: relative;
+	top: 10px;
+}
+
+.prewiev_slider{
+    display: block;
+    height: 75px;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}

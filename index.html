@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inicio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/dropzone/dist/dropzone.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+
+        <!-- DIreccion de envio y guarda de Imagenes del slider http://emeshows.com.ar/imgs/header2.jpg -->
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col">
+                    <form action="http://emeshows.com.ar/slider_menu.php?nap=header1.jpg" class="dropzone clase" id="dropzone1">
+                    </form>
+                    <img src="http://emeshows.com.ar/imgs/header1.jpg" class="prewiev_slider" alt="">
+                </div>
+                <div class="col">
+                    <form action="http://emeshows.com.ar/slider_menu.php?nap=header2.jpg" class="dropzone clase" id="dropzone_id_2">
+                    </form>
+                    <img src="http://emeshows.com.ar/imgs/header2.jpg" class="prewiev_slider" alt="">
+                </div>
+                <div class="col">
+                    <form action="http://emeshows.com.ar/slider_menu.php?nap=header3.jpg" class="dropzone clase" id="dropzone_id_3">
+                    </form>
+                    <img src="http://emeshows.com.ar/imgs/header3.jpg" class="prewiev_slider" alt="">
+                </div>
+                <div class="col">
+                    <form action="http://emeshows.com.ar/slider_menu.php?nap=header4.jpg" class="dropzone clase" id="dropzone_id_4">
+                    </form>
+                    <img src="http://emeshows.com.ar/imgs/header4.jpg" class="prewiev_slider" alt="">            
+                </div>
+                <div class="col">
+                    <form action="http://emeshows.com.ar/slider_menu.php?nap=header5.jpg" class="dropzone clase" id="dropzone_id_5">
+                    </form>
+                    <img src="http://emeshows.com.ar/imgs/header5.jpg" class="prewiev_slider" alt="">            
+                </div>
+                <div class="col">
+                    <form action="http://emeshows.com.ar/slider_menu.php?nap=header6.jpg" class="dropzone clase" id="dropzone_id_6">
+                    </form>
+                    <img src="http://emeshows.com.ar/imgs/header6.jpg" class="prewiev_slider" alt="">            
+                </div>
+
+            </div>
+        </div>
+        
+        
+        <script src="bower_components/dropzone/dist/dropzone.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+           Dropzone.options.myDropzone = {
+
+              init: function() {
+                
+                this.on("success", function(file, serverResponse) {
+                  this.removeFile(file);
+                  // If it needs resizing:
+                  //this.createThumbnailFromUrl(file, serverResponse.imageUrl);
+                });
+              }
+            };
+
+        </script>
+    </body>
+</html>
